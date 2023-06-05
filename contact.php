@@ -74,7 +74,7 @@
                                 <a href="404.html" class="dropdown-item">404</a>
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                        <a href="contact.php" class="nav-item nav-link active">Contact</a>
                     </div>
                     <a href="admission.php" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Admission<i
                             class="fa fa-arrow-right ms-3"></i></a>
@@ -194,7 +194,7 @@
                         <div class="col-lg-3 col-md-6">
                             <h5 class="text-white mb-4">Quick Links</h5>
                             <a class="btn btn-link text-white-50" href="about.html">About Us</a>
-                            <a class="btn btn-link text-white-50" href="contact.html">Contact Us</a>
+                            <a class="btn btn-link text-white-50" href="contact.php">Contact Us</a>
                             <a class="btn btn-link text-white-50" href="alumni.php">Our Alumni</a>
                             <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
                             <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
@@ -208,10 +208,10 @@
                             </p>
                             <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@mit.asia</p>
                             <div class="d-flex pt-2">
-                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-light btn-social" href="https://twitter.com/gsmmitsocial"><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-outline-light btn-social" href=""><i
                                         class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/channel/UClc1veMASwz_ArTo5WfT85g"><i class="fab fa-youtube"></i></a>
                                 <a class="btn btn-outline-light btn-social" href=""><i
                                         class="fab fa-linkedin-in"></i></a>
                             </div>
@@ -228,7 +228,8 @@
                             <div class="col-md-6 text-center text-md-end">
                                 <div class="footer-menu">
                                     <a href="">Home</a>
-                                    <a href="">Cookies</a>
+                                    <a href="login.php">Admin Login</a>
+
                                     <a href="">Help</a>
                                     <a href="">FQAs</a>
                                 </div>

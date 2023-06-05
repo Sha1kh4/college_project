@@ -15,4 +15,3 @@ CREATE TABLE admission (
     batch INT NOT NULL,
     branch VARCHAR(255) NOT NULL
 );
-# college_project

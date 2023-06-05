@@ -86,7 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <!-- Navbar Start -->
         <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
             <a href="index.html" class="navbar-brand d-flex align-items-center text-center py-0 px-4 px-lg-5">
-                <h1 class="m-0 text-primary">MIT</h1>
+                <img src = img/logo.png width="110" alt="MIT">
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -110,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             <a href="404.html" class="dropdown-item">404</a>
                         </div>
                     </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="contact.php" class="nav-item nav-link">Contact</a>
                 </div>
                 <a href="admission.php" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Admission<i
                         class="fa fa-arrow-right ms-3"></i></a>
@@ -125,8 +125,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb text-uppercase">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Courses</a></li>
-                        <li class="breadcrumb-item text-white active" aria-current="page">CSE</li>
+                        <li class="breadcrumb-item"><a href="#">Alumni</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Alumni Portal</li>
                     </ol>
                 </nav>
             </div>
@@ -161,10 +161,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Quick Links</h5>
                         <a class="btn btn-link text-white-50" href="about.html">About Us</a>
-                        <a class="btn btn-link text-white-50" href="contact.html">Contact Us</a>
+                        <a class="btn btn-link text-white-50" href="contact.php">Contact Us</a>
                         <a class="btn btn-link text-white-50" href="alumni.php">Our Alumni</a>
-                        <a class="btn btn-link text-white-50" href="">Privacy Policy</a>
-                        <a class="btn btn-link text-white-50" href="">Terms & Condition</a>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Contact</h5>
@@ -173,10 +171,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         </p>
                         <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@mit.asia</p>
                         <div class="d-flex pt-2">
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://twitter.com/gsmmitsocial"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.facebook.com/Aurangabad.mit"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.youtube.com/channel/UClc1veMASwz_ArTo5WfT85g"><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="https://www.linkedin.com/in/g-s-mandal-s-marathwada-institute-of-technology-aurangabad-306458214"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
@@ -193,7 +191,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
                                 <a href="">Home</a>
-                                <a href="">Cookies</a>
+                                <a href="login.php">Admin Login</a>
+
                                 <a href="">Help</a>
                                 <a href="">FQAs</a>
                             </div>
