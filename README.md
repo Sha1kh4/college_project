@@ -1,0 +1,18 @@
+# MIT aurangabad    
+CREATE TABLE admissions (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL,
+  batch VARCHAR(20) NOT NULL,
+  branch VARCHAR(100) NOT NULL,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE admission (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    batch INT NOT NULL,
+    branch VARCHAR(255) NOT NULL
+);
+# college_project
