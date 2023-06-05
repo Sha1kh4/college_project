@@ -97,7 +97,7 @@ if (!isset($_SESSION['AdminLoginId'])) {
 
                 echo "</table>";
             } else {
-                echo "<p>No records found in the 'asd' database</p>";
+                echo "<p>No Contacts enquires were found</p>";
             }
             // Close the connections
             $conn1->close();
@@ -147,7 +147,7 @@ if (!isset($_SESSION['AdminLoginId'])) {
 
                 echo "</table>";
             } else {
-                echo "<p>No records found in the 'admission' database</p>";
+                echo "<p>No admission enquires were found</p>";
             }
             $conn2->close();
             ?>
@@ -191,7 +191,7 @@ if (!isset($_SESSION['AdminLoginId'])) {
 
                 echo "</table>";
             } else {
-                echo "<p>No records found in the 'Alumni Feedback' database</p>";
+                echo "<p>No Alumni Feedback were found</p>";
             }
             // Close the connections
             $conn1->close();
