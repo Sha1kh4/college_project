@@ -19,6 +19,7 @@ CREATE TABLE alumni_feedback (
     name VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL,
     batch INT NOT NULL,
+    branch VARCHAR(255) NOT NULL,
     feedback VARCHAR(255) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
