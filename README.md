@@ -37,3 +37,12 @@ CREATE TABLE admission (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 
 );
+### lastly create a table admin_login in admission database using the following sql code
+CREATE TABLE admin_login (
+	admin_id varchar(28),
+	admin_pass varchar(28)
+);
+### add values to it
+INSERT INTO admin_login (admin_id,admin_pass)
+VALUES
+('admin','1234');
