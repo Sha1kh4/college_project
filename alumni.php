@@ -19,12 +19,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = $_POST['name'];
     $email = $_POST['email'];
     $batch = $_POST['batch'];
+    $branch = $_POST['branch'];
     $feedback = $_POST['feedback'];
 
     // Prepare and execute the SQL query
-    $query = "INSERT INTO alumni_feedback (name, email, batch, feedback) VALUES (?, ?, ?, ?)";
+    $query = "INSERT INTO alumni_feedback (name, email, batch,branch, feedback) VALUES (?, ?, ?, ?, ?)";
     $stmt = $pdo->prepare($query);
-    $stmt->execute([$name, $email, $batch, $feedback]);
+    $stmt->execute([$name, $email, $batch,$branch, $feedback]);
 
     // Check if the feedback was successfully inserted
     if ($stmt->rowCount() > 0) {
@@ -36,8 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Handle any database connection errors
     echo "Database connection failed: " . $e->getMessage();
   }
-}
-?>
+}?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -140,7 +140,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required><br><br>
             <label for="batch">Batch:</label>
-            <input type="number" id="batch" name="batch" min="1900" max="2099" required>
+            <input type="number" id="batch" name="batch" min="1900" max="2099" required>&nbsp; &nbsp; &nbsp;   
+            <label for="branch">Branch:</label>
+            <select id="branch" name="branch" required>
+        <option value="">Select Branch</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Civil Engineering">Civil Engineering</option>
+    </select>
             <br><br>
 
 

@@ -158,7 +158,7 @@ if (!isset($_SESSION['AdminLoginId'])) {
 
     <div class="container">
         <button onclick="toggleTable2()">View Alumni feedback</button>
-        <div id="data-table2" style="display: none;">
+        <div id="data-table2" class= "center"style="display: none;">
 
 
             <?php
@@ -173,8 +173,8 @@ if (!isset($_SESSION['AdminLoginId'])) {
             // Display the data from the "admission" database
             if ($result3 && $result3->num_rows > 0) {
                 echo "<h2>Database: Alumni Feedback</h2>";
-                echo "<table>";
-                echo "<tr><th>ID</th><th>Name</th><th>Email</th><th>Batch</th><th>Feedback</th><th>Time created</th></tr>";
+                echo "<table >";
+                echo "<tr><th>ID</th><th>Name</th><th>Email</th><th>Batch</th><th>Branch</th><th>Feedback</th><th>Time created</th></tr>";
 
                 while ($row = $result3->fetch_assoc()) {
                     echo "<tr>";
@@ -182,6 +182,7 @@ if (!isset($_SESSION['AdminLoginId'])) {
                     echo "<td>" . $row["name"] . "</td>";
                     echo "<td>" . $row["email"] . "</td>";
                     echo "<td>" . $row["batch"] . "</td>";
+                    echo "<td>" . $row["branch"] . "</td>";
                     echo "<td>" . $row["feedback"] . "</td>";
                     echo "<td>" . $row["created_at"] . "</td>";
 
